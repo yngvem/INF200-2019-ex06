@@ -20,7 +20,7 @@ The functions you should implement
 
 For this coursework, you must implement the functions required to compute the
 gradient and the gradient descent algorithm. Specifically, you should
-implement the following five functions:
+implement the following functions:
 
   * ``sigmoid(z)``
   * ``predict_proba(w, X)``
