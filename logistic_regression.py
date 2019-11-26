@@ -234,14 +234,14 @@ def logistic_gradient(coef, X, y):
 
     .. math::
 
-        \nabla_w L(\mathbf{w}; X, \mathbf{y}) = \sum_i \mathbf{x}_i (y_i - \hat{y}_i),
+        \nabla_w L(\mathbf{w}; X, \mathbf{y}) = \sum_i \mathbf{x}_i (\hat{y}_i - y_i),
 
     or, elementwise,
 
     .. math::
 
         \left[\nabla_w L(\mathbf{w}; X, \mathbf{y})\right]_j = \frac{\partial L}{\partial w_j}
-                                                             = \sum_i X_{ij} (y_i - \hat{y}_i),
+                                                             = \sum_i X_{ij} (\hat{y}_i - y_i),
 
     where :math:`\hat{y}_i` is the predicted value for data point
     :math:`i` and is given by :math:`\sigma(x_i^Tw)`, where
